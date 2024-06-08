@@ -1,0 +1,18 @@
+[package]
+name = "database_connections"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+mysql = "25.0.1"
+tokio = { version = "1", features = ["full"] }
+csv = "1.1"
+serde = { version = "1.0", features = ["derive"] }
+serde_derive = "1.0"
+serde_json = "1.0"
+postgres = "0.19.7"
+redis = "0.25.3"
+mongodb = "2.1"
+bson = { version = "2", features = ["chrono-0_4"] } # Needed for using chrono datetime in doc
+futures-util = "0.3"
+
